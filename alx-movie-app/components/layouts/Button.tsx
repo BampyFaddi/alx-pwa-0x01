@@ -2,7 +2,7 @@ import React from "react";
 
 interface ButtonProps {
   title: string;
-  action: () => void | Promise<void>;
+  action: () => void | Promise<unknown>;
 }
 
 const Button: React.FC<ButtonProps> = ({ title, action }) => {
