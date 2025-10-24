@@ -5,14 +5,15 @@ interface ButtonProps {
   action: () => void | Promise<void>;
 }
 
-export default function Button({ title, action }: ButtonProps) {
+const Button: React.FC<ButtonProps> = ({ title, action }) => {
   return (
     <button
       onClick={action}
-      className="px-8 py-2 border-2 border-yellow-400 rounded-full font-semibold
-                 hover:bg-yellow-400 hover:text-black transition-colors duration-300"
+      className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
     >
       {title}
     </button>
   );
-}
+};
+
+export default Button;
