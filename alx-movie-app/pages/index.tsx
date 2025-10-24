@@ -6,6 +6,7 @@ const Home: React.FC = () => {
 
   return (
     <div className="bg-[#171D22] text-white">
+      {/* Hero Section */}
       <section
         className="h-screen bg-cover bg-center"
         style={{
@@ -22,13 +23,16 @@ const Home: React.FC = () => {
             Explore the latest blockbuster movies, critically acclaimed films,
             and your personal favorites – all in one place.
           </p>
+
+          {/* Button to Movies Page */}
           <Button
             title="Browse Movies"
-            action={() => router.push("/movies", undefined, { shallow: false })}
+            action={() => router.push("/movies")}
           />
         </div>
       </section>
 
+      {/* Signup Section */}
       <section className="py-16 px-8 md:px-44 bg-[#121018] text-center">
         <h2 className="text-3xl md:text-5xl font-semibold mb-8">
           Join CineSeek Now!
@@ -37,6 +41,8 @@ const Home: React.FC = () => {
           Sign up today to get access to the latest movies, exclusive content,
           and personalized movie recommendations.
         </p>
+
+        {/* Button to Signup Page */}
         <Button
           title="Get Started"
           action={() => router.push("/signup")}
