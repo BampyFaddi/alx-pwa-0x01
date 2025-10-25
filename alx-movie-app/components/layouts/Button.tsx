@@ -1,9 +1,9 @@
 import React from 'react';
 
-type ButtonProps = {
+interface ButtonProps {
   title: string;
   action: () => void;
-};
+}
 
 const Button: React.FC<ButtonProps> = ({ title, action }) => {
   return (
